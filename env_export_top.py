@@ -18,7 +18,7 @@ def find_top():
       yield path
 
 
-def export_top_env():
+def env_export_top():
   from os import environ
   environ['TOP'] = next(find_top())
 
